@@ -41,7 +41,10 @@ ram:{
 almacenamiento:{
     type: DataTypes.STRING(20),
     allowNull: false
-  }
+    },
+estado: {
+    type: DataTypes.BOOLEAN
+    }
   },{
     sequelize,
     modelName: 'modificaciones_equipo',

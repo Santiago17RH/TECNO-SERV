@@ -18,16 +18,24 @@ ruta_acta: {
     type: DataTypes.STRING(50),
     allowNull: false
     },
-    observaciones: {
-      type: DataTypes.STRING(500),
-      allowNull: false
+observaciones: {
+    type: DataTypes.STRING(500),
+    allowNull: false
     },
-    doc_identidad: {
-      type: DataTypes.STRING(25),
-      allowNull: false
+doc_identidad: {
+    type: DataTypes.STRING(25),
+    allowNull: false
     },
-    estado: {
-      type: DataTypes.BOOLEAN
+doc_asignador: {
+    type: DataTypes.STRING(25),
+    allowNull: false
+    },
+nombre_asignador: {
+    type: DataTypes.STRING(80),
+    allowNull: false
+    },
+estado: {
+    type: DataTypes.BOOLEAN
     }
   },{
     sequelize,

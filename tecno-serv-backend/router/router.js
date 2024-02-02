@@ -1,4 +1,6 @@
 const ValidacionToken = require('../middleware/ValidacionToken');
+const express = require("express");
+const path = require('path');
 
 const router = require('express').Router()
 
@@ -12,6 +14,8 @@ router.use('/area', ValidacionToken, require('./routes/AreaRouter'));
 router.use('/rol', ValidacionToken, require('./routes/RolRouter'));
 router.use('/ubicacion', ValidacionToken, require('./routes/UbicacionRouter'));
 
+
+router.use('/public/image/', express.static(path.join(__dirname,'../image/')));
 
 
 router.use('/computo', ValidacionToken, require('./routes/EquipoRouter'));

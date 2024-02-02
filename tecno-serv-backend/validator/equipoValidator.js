@@ -34,10 +34,10 @@ const validateEquipo = [
     .isLength({ max: 30 })
     .withMessage('Ingrese que procesador tiene el dispositivo, no mayor a 30 caracteres'),
 
-    check('descripcion')
+    check('nombreRed')
     .exists()
     .notEmpty()
-    .withMessage('Ingrese una descripcion breve'),
+    .withMessage('Ingrese un nombre de red'),
 
     check('sistemaOperativo')
     .exists()

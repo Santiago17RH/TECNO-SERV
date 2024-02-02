@@ -10,22 +10,18 @@ const firma = () => {
   return (
     <>
       <div className="contenedore">
-        <div className="imagen-con-texto">
-          <img className='firma' src={archivo} alt="archivofirma" />
-          {/* <p class="sobreposicion">Seleccione un archivo (firma)</p> */}
-          <input type="file" class="seleccionarFirma" name="" id="" />
-        </div>
         <Link to="/dashboard/firma/hacerfirma" >
         <div className="imagen-con-texto">
           <img className='firma' src={firmamanual} alt="firmamanual" />
           <p>Firma Manual</p>
         </div>
         </Link>
-
+        <Link to="/dashboard/firma/consultarfirma" >
         <div className="imagen-con-texto">
           <img className='firma' src={consultarfirma} alt="consultarfirma" />
           <p>Consultar Firma</p>
         </div>
+        </Link>
 
         <div className="imagen-con-texto">
           <img className='firma' src={docfirma} alt="docfirma" />

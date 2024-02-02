@@ -95,6 +95,8 @@ const HistorialMovController = {
                     ruta_acta: rutaActa,
                     observaciones: observaciones,
                     doc_identidad: docIdentidad,
+                    doc_asignador: req.usuarioId,
+                    nombre_asignador: req.nombre,
                     estado: true
                 });
     

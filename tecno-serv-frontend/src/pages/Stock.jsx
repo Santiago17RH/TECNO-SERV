@@ -11,7 +11,7 @@ import ExportButton from '../components/ExportarExcel'
 import historial from '../assets/historial.svg'
 import asignar from '../assets/asignar.svg'
 import AsignaUsuario from './AsignaUsuario'
-import usuario from '../assets/usuario.svg'
+import usuario from '../assets/usuario.svg' 
 
 const ContenedorFiltro = ({ equipos, onEdit, onAsingar}) => {
     const [buscar, setBuscar] = useState('')

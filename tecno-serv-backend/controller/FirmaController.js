@@ -7,8 +7,7 @@ const { where } = require('sequelize');
 const FirmaController = {
     getFirma: async (req, res) => {
         try {
-            let {docIdentidadUsuario} = req.body;
-            let firma = await FirmaModel.findOne({where: {doc_identidad: docIdentidadUsuario}});
+            let firma = await FirmaModel.findOne({where: {doc_identidad: req.usuarioId}});
             res.json({ message: "Consulta realizada con éxito", firma });
         } catch (error) {
             console.error("Error al obtener firma:", error);

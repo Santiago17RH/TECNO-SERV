@@ -15,7 +15,7 @@ import HacerFirma from './pages/HacerFirma'
 import { Toaster } from 'react-hot-toast'
 import Historial from './pages/Historial'
 import ValidaPdf from './pages/validaPdf'
-
+import ConsultarFirma from './pages/ConsultarFirma'
 
 function App() {
 
@@ -71,6 +71,10 @@ function App() {
     {
       path: "/dashboard/firma/hacerfirma",
       element: <div><MenuLateral/><div className="contenido"><HacerFirma /> </div></div>
+    },
+    {
+      path: "/dashboard/firma/consultarfirma",
+      element: <div><MenuLateral/><div className="contenido"><ConsultarFirma /> </div></div>
     },
     {
       path: "login",
